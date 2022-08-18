@@ -1,5 +1,4 @@
 import java.util.*;
-
 class Solution {
     public static int[] solution(int[] lottos, int[] win_nums) {
         int cnt = 0;

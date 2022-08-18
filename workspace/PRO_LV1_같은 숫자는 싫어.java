@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class Solution {
     public int[] solution(int[] arr) {
         List<Integer> myclass = new ArrayList<>();
