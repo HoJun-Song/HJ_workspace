@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 public class no_goal_time {
 	public String solution(String[] participant, String[] completion) {
 		String tmp = "";

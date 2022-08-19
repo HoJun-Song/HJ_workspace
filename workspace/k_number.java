@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class k_number {
 	public int[] solution(int[] array, int[][] commands) {
 		int[] answer = new int[commands.length];
