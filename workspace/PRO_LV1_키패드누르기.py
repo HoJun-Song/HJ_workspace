@@ -4,6 +4,7 @@ def solution(numbers, hand):
     rightPos = [2, 3]
     diffLeft = 0
     diffRight = 0
+    
     for i in numbers:
         if i == 1:
             answer += 'L'
