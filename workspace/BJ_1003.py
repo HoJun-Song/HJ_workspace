@@ -3,6 +3,7 @@ def Fibo(N):
         return fibo[N]
     fibo[N] = [Fibo(N - 1)[0] + Fibo(N - 2)[0], Fibo(N - 1)[1] + Fibo(N - 2)[1]]
     return fibo[N]
+
 T = int(input())
 for _ in range(T):
     N = int(input())
