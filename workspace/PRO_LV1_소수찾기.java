@@ -1,17 +1,25 @@
-//2022-07-25 시간초과
 class Solution {
     public int solution(int n) {
         int answer = 0;
-        for (int i = 1; i <= n; i++) {
-            int mod = 0;
-            int j = 2;
-            while (j <= i) {
-                if (i%j == 0) mod += 1;
-                if (mod > 1) break;
-                j += 1;
-            }
-            if (mod == 1) answer += 1;
+        int[] arr = new int[n+1];
+
+        for (int i = 0; i <= n; i++) {
+            arr[i] = i;
         }
+        arr[1] = 0;
+
+        for (int i = 2; i <= n; i++) {
+            if (arr[i] == 0) continue;
+
+            for (int j = i * 2; j <= n; j += i) {
+                arr[j] = 0;
+            }
+        }
+
+        for (int i = 2; i <= n; i++) {
+            if (arr[i] != 0) answer += 1;
+        }
+
         return answer;
     }
 }
