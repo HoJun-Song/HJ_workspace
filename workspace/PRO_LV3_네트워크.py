@@ -36,3 +36,12 @@ def bfs(computers, start, visited):
                 queue.append(i)
             visited.append(i)
     return visited
+
+"""
+DFS
+"""
+def dfs(graph, x, visited):
+    visited += [x]
+    for i in graph[x]:
+        if i not in visited:
+            dfs(graph, i, visited)
